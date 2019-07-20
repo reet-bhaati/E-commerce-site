@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="pd.css">
+</head>
+<body>
+
+   <div class="navbar">
+
+                <div class="nav-content"><img id="logo" onclick="window.location.href='http://localhost:4040/'" src="black_logo.png"></div>
+            
+                <div class="text-container">
+                    
+                    <div class="nav-content nav-text" onclick="window.location.href='http://localhost:4040/'">Home</div>
+                    <div class="nav-content nav-text" onclick="window.location.href='http://localhost:4040/store'">Store</div>
+                    <div class="nav-content nav-text" onclick="window.location.href='http://localhost:4040/men'">Men</div>
+                    <div class="nav-content nav-text" onclick="window.location.href='http://localhost:4040/women'" >Women</div>
+                    <div class="nav-content nav-text" onclick="window.location.href='http://localhost:4040/accessories'" >Accessories</div>
+                    <div class="nav-content nav-text" onclick="window.location.href='http://localhost:4040/about'" >About</div>
+                    <div class="nav-content nav-text" onclick="window.location.href='http://localhost:4040/contact-us'" >Contact Us</div>
+                </div>
+            
+                <div class="nav-content"><img id="bag" onclick="window.location.href='http://localhost:4040/cart'"  src="black_bag.png"></div>
+            
+                </div>
+
+ <div class="dynamic">
+    
+      <img id="main-pic" src="products/blue-basic-jeans-1-free-img-300x300.jpg">
+        {{!-- here we write dynamic content --}}
+
+    {{#each product as |t|}}
+    <div class="content">
+        
+            <div id="feed">HOME/{{t.category}}/{{t.name}}</div>        
+            <div id="pn">{{t.name}}</div>
+            <div id="pr">{{t.total}}</div>
+            
+            <div id="cat"><span id="a">Category: </span>{{t.category}}</div>
+            
+            <button id="add-to-cart" onclick="window.location.href='http://localhost:4040/add-to-cart?id={{t._id}}'" >Add to Cart</button>            
+            
+        </div>
+        {{/each}}
+
+    </div>
+
+    
+
+    <div class="extras">
+        <div id="quick" >Quick Links</div>
+        <div class="links">
+            <div class="links-content">Home</div>
+            <div class="links-content">About</div>
+            <div class="links-content">Cart</div>
+            <div class="links-content">Contact Us</div>
+        </div>
+
+        <div id="forHer">For Her</div>
+        <div class="her">
+
+            <div class="her-content">Women Jeans</div>
+            <div class="her-content">Tops and Shirts</div>
+            <div class="her-content">Heels and Flats</div>
+            <div class="her-content">Women Accessories</div>
+
+        </div>
+
+        <div id="forHim" >For Him</div>
+        <div class="him">
+
+            <div class="him-content">Men Jeans</div>
+            <div class="him-content">Men Shirts</div>
+            <div class="him-content">Men Shoes</div>
+            <div class="him-content">Men Accessories</div>
+
+        </div>
+
+    </div> 
+
+    
+</body>
+</html>

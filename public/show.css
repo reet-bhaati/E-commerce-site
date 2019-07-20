@@ -1,0 +1,142 @@
+body
+{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar
+{
+    color: #333333;
+    display: flex;
+    padding-left:100px;
+    padding-top: 20px;
+    height: 55px;
+}
+.text-container
+{
+    padding-top: 7px;
+    display: flex;
+    font-size: 20px;
+    padding-left: 400px;
+}
+.nav-text
+{
+    padding-left: 35px;
+}
+#bag
+{
+    padding-top: 6.4px;
+    padding-left: 30px;
+    width: 40px;
+}
+#logo
+{
+    width: 130px;
+}
+.show
+{
+    background-color: whitesmoke;
+    height: 1270px;
+}
+.extras
+{
+    background-color: rgba(240, 248, 255);
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.quick
+{
+    display: block;
+    position: relative;
+}
+.links
+{
+    position: relative;
+    left:33px;
+    font-size: 30px;
+    margin-left: 250px;
+}
+.extras-items
+{
+    font-size: 17px;
+    position: relative;
+    left:10px;
+
+}
+
+.filter-content
+{
+    width: 180px;
+    /* background-color:pink; */
+    position: absolute;
+    left:80px;
+    top:140px;
+    color: grey;
+    font-size: 20px;
+}
+.filter-heading
+{
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.771);
+}
+.filter-title
+{
+    position: relative;
+    left:3px;
+    padding-top: 2px;
+    font-size: 17px;
+}
+#divider
+{
+    position: absolute;
+    left: 240px;
+    bottom: 110px;
+    background-color: grey;
+    width: 2px;
+    height: 550px;
+}
+.filter-form
+{
+    margin-top: 6px;
+}
+.allproducts
+{
+    position: relative;
+    top: 20px;
+    left:270px;
+}
+.products
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card
+{
+    margin: 40px;
+}
+.card img
+{
+    width: 240px !important;
+
+}
+#add-to-cart
+{
+    position: relative;
+    left: 25px;
+    border: solid whitesmoke 3px;
+    width: 140px; 
+    height: 50px; 
+    background-color: rgb(103, 175, 238) ;
+    color: whitesmoke;
+    font-size: 20px;
+}
+#add-to-cart:hover
+{
+    border: solid black 3px;
+    color: black;
+    background-color:transparent;
+    transition: .3s;
+}

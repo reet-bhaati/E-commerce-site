@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="show.css">
+</head>
+<body>
+
+        <div class="navbar">
+
+                <div class="nav-content"><img id="logo" onclick="window.location.href='http://localhost:4040/'" src="black_logo.png"></div>
+            
+                <div class="text-container">
+                    
+                    <div class="nav-content nav-text" onclick="window.location.href='http://localhost:4040/'">Home</div>
+                    <div class="nav-content nav-text" onclick="window.location.href='http://localhost:4040/store'">Store</div>
+                    <div class="nav-content nav-text" onclick="window.location.href='http://localhost:4040/men'">Men</div>
+                    <div class="nav-content nav-text" onclick="window.location.href='http://localhost:4040/women'" >Women</div>
+                    <div class="nav-content nav-text" onclick="window.location.href='http://localhost:4040/accessories'" >Accessories</div>
+                    <div class="nav-content nav-text" onclick="window.location.href='http://localhost:4040/about'" >About</div>
+                    <div class="nav-content nav-text" onclick="window.location.href='http://localhost:4040/contact-us'" >Contact Us</div>
+                </div>
+            
+                <div class="nav-content"><img id="bag" onclick="window.location.href='http://localhost:4040/cart'"  src="black_bag.png"></div>
+            
+                </div>
+
+<div class="show">
+
+    <div class="allproducts">
+
+        <div class="products">
+
+            {{#each products as |t|}}
+            <div class="card" style="width: 18rem;">
+                <img onclick="window.location.href='./{{t._id}}'" src="products/blue-basic-jeans-1-free-img-300x300.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <span class="card-text">{{t.name}}<br>{{t.total}}</span>
+            <button id="add-to-cart" onclick="window.location.href='http://localhost:4040/add-to-cart?id={{t._id}}'" >Add to Cart</button>
+                </div>
+            </div>
+
+            {{/each}}
+
+        </div>
+
+
+
+</div>
+
+
+        <div class="filter-content">
+            <div class="filter-form">
+                <div class="filter-heading">Categories</div>
+                <div class="filter-title" onclick="window.location.href='http://localhost:4040/men'">Men</div>
+                <div class="filter-title" onclick="window.location.href='http://localhost:4040/women'">Women</div>
+                <div class="filter-title" onclick="window.location.href='http://localhost:4040/accessories'">Accessories</div>
+            </div>
+
+             <div class="filter-form">
+                <div class="filter-heading">Size</div>
+                <div class="filter-title" onclick="window.location.href='./?size=S'">S</div>
+                <div class="filter-title" onclick="window.location.href='./?size=M'">M</div>
+                <div class="filter-title" onclick="window.location.href='./?size=L'">L</div>
+                <div class="filter-title" onclick="window.location.href='./?size=XL'">XL</div>
+            </div>
+
+            {{!-- <div class="filter-form">
+                <div class="filter-heading">Range</div>
+                <div class="filter-title">Rs.1000-Rs.1500</div>
+                <div class="filter-title">Rs.1500-Rs.2000</div>
+                <div class="filter-title">Rs.2000-Rs.3000</div>
+                <div class="filter-title">Above Rs.3000</div>
+            </div> --}}
+
+            <div class="filter-form">
+                <div class="filter-heading">Color</div>
+                <div class="filter-title" onclick="window.location.href='./?color=red'">Red</div>
+                <div class="filter-title" onclick="window.location.href='./?color=black'">Black</div>
+                <div class="filter-title" onclick="window.location.href='./?color=blue'">Blue</div>
+                <div class="filter-title" onclick="window.location.href='./?color=green'">Green</div>
+            </div>
+            
+        </div>
+
+        <div id="divider"></div>
+
+
+</div>
+
+
+ <div class="extras">
+
+            <div class="quick links">Quick Links
+
+                <div class="quick-items extras-items">Home</div>
+                <div class="quick-items extras-items">About</div>
+                <div class="quick-items extras-items">Cart</div>
+                <div class="quick-items extras-items">Contact Us</div>
+
+            </div>
+
+             <div class="forher links">For Her
+
+                <div class="forher-items extras-items">Home</div>
+                <div class="forher-items extras-items">About</div>
+                <div class="forher-items extras-items">Cart</div>
+                <div class="forher-items extras-items">Contact Us</div>
+
+            </div>
+
+             <div class="forhim links">For Him
+
+                <div class="forhim-items extras-items">Home</div>
+                <div class="forhim-items extras-items">About</div>
+                <div class="forhim-items extras-items">Cart</div>
+                <div class="forhim-items extras-items">Contact Us</div>
+
+            </div>
+
+        </div>
+
+    
+</body>
+</html>

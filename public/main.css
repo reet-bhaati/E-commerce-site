@@ -1,0 +1,329 @@
+html
+{
+ padding: 0;
+    margin: 0; 
+}
+body
+{
+    overflow-x: hidden; 
+}
+.nav-bar
+{
+    background-color:#0748d310;
+}
+#logo
+{
+    width: 130px;
+}
+#shop
+{
+    position: relative;
+    left:130px;
+    top:155.5px;
+    width: 140px; 
+    height: 50px;
+    padding: 7px;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+}
+#shop:hover
+{
+    background-color:#0748d310; 
+    transition: .2s;
+    border: solid white 3px;
+    color: white;
+
+}
+#find
+{
+    border: solid white 3px;
+    position: relative;
+    left:160px;
+    top:155px;
+    width: 140px; 
+    height: 50px;
+    background-color: #0748d310;
+    color: white;
+    font-size: 20px;
+}
+#find:hover
+{
+    color: black;
+    transition: .2s;
+    background-color:white; 
+}
+#text
+{
+    position: relative;
+    left:100px;
+    top:130px;
+    color: white;
+    font-size: 50px;
+    width: 450px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.navbar-nav
+{
+    position: relative;
+    left:400px;
+}
+
+ .navbar
+{
+    top:5px;
+    position: relative;
+    left: 130px;
+    color: #cecece;
+    padding: 0;
+    margin: 0;
+    height: 80px;
+}
+#bag
+{
+    position: relative;
+    left:30px;
+    bottom:14px;
+    height: 60px;
+}
+.nav-item
+{
+    position: relative;
+    top:7px;
+    padding-left: 30px;
+}
+
+#bag
+{
+    width: 65px;
+}
+#home
+{
+    position: fixed;
+    z-index: -1;
+    background-size: cover;
+    height: 750px;
+    width: 100%;
+    filter: brightness(67%);
+}
+.card-area
+{
+    position: relative;
+    top:450px;
+    background-color: white;
+    /* height: 570px; */
+    height: 1100px;
+}
+.logo
+{
+    width: 300px;
+}
+#ralph
+{
+    position: relative;
+    bottom: 15px;
+    height: 100px;
+}
+
+.brands
+{
+    position: relative;
+    left:70px;
+    top:30px;
+}
+.card-body1
+{
+    position: absolute;
+    left: 100px;
+    padding: 0;
+    margin: 0;
+   
+}
+.card-body2
+{
+    position: absolute;
+    left: 550px;
+    padding: 0;
+    margin: 0;
+   
+}
+.card-body3
+{
+    position: relative;
+    left: 1000px;
+    padding: 0;
+    margin: 0;
+   
+}
+.card-pic
+{
+   
+    height: 350px;
+    filter: brightness(80%);
+}
+.card-btn
+{
+    position: relative;
+    top:80px;
+    border: solid white 3px;
+    right: 310px;
+    width: 140px; 
+    height: 50px; 
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+}
+.card-btn:hover
+{
+    color: black;
+    background-color: white;
+    transition: .3s;
+}
+.card-text1
+{
+    position: relative;
+    left: 130px;
+    bottom: 300px;
+    color: white;
+    font-size: 30px;
+    width: 200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card-text2
+{
+    position: relative;
+    left: 40px;
+    bottom: 300px;
+    color: white;
+    font-size: 30px;
+    width: 200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card-text3
+{
+    position: relative;
+    left: 20px;
+    bottom: 300px;
+    color: white;
+    font-size: 30px;
+    width: 200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.allCards
+{
+    position: relative;
+    top:20px;
+}
+.allproducts
+{
+    position: relative;
+    top:100px;
+    background-color: rgba(240, 248, 255);
+    height: 1100px;
+}
+.allproducts h2
+{
+    position: relative;
+    left:560px;
+    top:30px;
+}
+.allproducts #line
+{
+    height: 2px;
+    width: 300px;
+    position: relative;
+    left: 535px;
+    background-color: grey;
+    top:36px;
+}
+#products
+{position: relative;
+    top:80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card
+{
+    margin: 10px;
+}
+.services-row
+{
+    height: 400px;
+    background-color: #f4f4f4;
+    background-size: cover;
+
+}
+.services
+{
+    
+    display: flex;
+    position: relative;
+    left:85px;
+    top:200px;
+}
+.benifits
+{
+    position: absolute;
+    left: 530px;
+    bottom:200px;
+}
+.benifits #line
+{
+    position: relative;
+    right: 30px;
+    top:4px;
+    height: 2px;
+    width: 160px;
+    background-color: grey;
+}
+.feature
+{
+    padding-left: 150px;
+}
+
+.extras
+{
+    background-color: rgba(240, 248, 255);
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.quick
+{
+    display: block;
+    position: relative;
+}
+.links
+{
+    position: relative;
+    left:33px;
+    font-size: 30px;
+    margin-left: 250px;
+}
+.extras-items
+{
+    font-size: 17px;
+    position: relative;
+    left:10px;
+
+}
+#add-to-cart
+{
+    border: solid whitesmoke 3px;
+    width: 140px; 
+    height: 50px; 
+    background-color: rgb(103, 175, 238) ;
+    color: whitesmoke;
+    font-size: 20px;
+}
+#add-to-cart:hover
+{
+    border: solid black 3px;
+    color: black;
+    background-color:transparent;
+    transition: .3s;
+}

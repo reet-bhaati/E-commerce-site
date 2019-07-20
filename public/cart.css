@@ -1,0 +1,84 @@
+body
+{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar
+{
+    color: #333333;
+    display: flex;
+    padding-left:100px;
+    padding-top: 20px;
+    height: 55px;
+}
+.text-container
+{
+    padding-top: 7px;
+    display: flex;
+    font-size: 20px;
+    padding-left: 400px;
+}
+.nav-text
+{
+    padding-left: 35px;
+}
+#bag
+{
+    padding-top: 6.4px;
+    padding-left: 30px;
+    width: 40px;
+}
+#logo
+{
+    width: 130px;
+}
+.cart-data
+{
+    height: 728px;
+    background-color: whitesmoke;
+}
+#cart-text
+{
+    position: relative;
+    left: 620px;
+    top:65px;
+    font-size:60px;
+    color: gray;
+}
+#cart-table
+{
+    position: relative;
+    left:280px;
+    top:90px;
+}
+.table
+{
+    border: 2px solid grey;
+    border-collapse: collapse;
+    width: 900px;
+    text-align: center;
+    padding: 20px;
+}
+th,td
+{
+    padding: 15px;
+}
+.cart-total
+{
+
+    position: relative;
+    top: 110px;
+    left:850px;
+    border: 2px solid black;
+    width: 330px;
+    text-align: left;
+    
+}
+#remove-item
+ {
+    position: relative;
+    left: 40px; 
+    border-radius: 50%;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+        <div class="navbar">
+
+                <div class="nav-content"><img id="logo" onclick="window.location.href='http://localhost:4040/'" src="black_logo.png"></div>
+            
+                <div class="text-container">
+                    
+                    <div class="nav-content nav-text" onclick="window.location.href='http://localhost:4040/'">Home</div>
+                    <div class="nav-content nav-text" onclick="window.location.href='http://localhost:4040/store'">Store</div>
+                    <div class="nav-content nav-text" onclick="window.location.href='http://localhost:4040/men'">Men</div>
+                    <div class="nav-content nav-text" onclick="window.location.href='http://localhost:4040/women'" >Women</div>
+                    <div class="nav-content nav-text" onclick="window.location.href='http://localhost:4040/accessories'" >Accessories</div>
+                    <div class="nav-content nav-text" onclick="window.location.href='http://localhost:4040/about'" >About</div>
+                    <div class="nav-content nav-text" onclick="window.location.href='http://localhost:4040/contact-us'" >Contact Us</div>
+                </div>
+            
+                <div class="nav-content"><img id="bag" onclick="window.location.href='http://localhost:4040/cart'"  src="black_bag.png"></div>
+            
+                </div>
+
+<div class="cart-data">
+
+    <div id="cart-text">Cart</div>
+
+    <div id="cart-table">
+
+            {{#if cart}}
+
+        <div id="cart-visual">
+            
+            <table class="table" frame=void rules=rows>
+
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+            {{#each cart as |t|}}
+            <tr>
+                
+                <td>{{t.name}}</td>
+                <td>{{t.price}}</td>
+                <td>{{t.quantity}}<span onclick="window.location.href='/remove-item/{{t._id}}'" id="remove-item">-</span></td>
+                <td>{{t.total}}</td>
+            </tr>
+            {{/each}}
+
+            </table>
+            
+
+        </div>
+
+
+            {{else}}
+
+                <div style="position: relative; left:250px; top:30px; font-size:40px;">Your Cart is Empty</div>
+                <button class="card-btn" style=" position: relative; top:80px; border: solid white 3px; left: 334px; width: 140px; background-color:skyblue; height: 50px; color: white; font-size: 20px;" onclick="window.location.href='http://localhost:4040/store'">SHOP NOW</button>
+
+            {{/if}}
+
+    </div>
+
+    {{#if cart}}
+    <div >
+
+    <table frame=void rules=rows class="cart-total">
+
+        <tr>
+            <th>Cart Totals</th>
+        </tr>
+
+        <tr>
+            <td>Total</td>
+            <td>{{totalPrice}}</td>
+        </tr>
+
+
+
+    </table>
+
+
+</div>
+{{/if}}
+
+</div>
+
+
+
+    
+</body>
+</html>

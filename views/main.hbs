@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+
+    
+
+<div class="nav-bar">
+        
+    <img id="home" src="home-new-bg-free-img.jpg">
+
+    <nav class="navbar navbar-expand-lg navbar-light ">
+
+    <img id="site-logo" onclick="window.location.href='http://localhost:4040/'" src="logo1-free-img.png">
+ 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        
+
+    <ul class="navbar-nav mr-auto">
+
+      <li class="nav-item" onclick="window.location.href='http://localhost:4040/'">Home</li>
+      <li class="nav-item" onclick="window.location.href='http://localhost:4040/store'">Store</li>
+      <li class="nav-item" onclick="window.location.href='http://localhost:4040/men'">Men</li>
+      <li class="nav-item" onclick="window.location.href='http://localhost:4040/women'">Women</li>
+      <li class="nav-item" onclick="window.location.href='http://localhost:4040/accessories'">Accessories</li>
+      <li class="nav-item" onclick="window.location.href='http://localhost:4040/about'">About</li>
+      <li class="nav-item" onclick="window.location.href='http://localhost:4040/contact-us'">Contact Us</li>
+
+      <div class="nav-content"><img id="bag"  onclick="window.location.href='http://localhost:4040/cart'" src="white-cart.png"></div> 
+    </ul>
+
+        </div>
+    </nav> 
+</div>
+
+    <div id="text">Raining Offers for Hot Summer!</div>
+    <button type="button" id="shop" onclick="window.location.href='http://localhost:4040/store'">SHOP NOW</button>
+    <button type="button" id="find" onclick="window.location.href='http://localhost:4040/about'">FIND MORE</button>
+
+    <div class="card-area">
+
+        <div class="brands">
+
+            <img class="logo" src="fcuk0logo.png">
+            <img class="logo" src="prada-seo.jpeg">
+            <img class="logo" src="balenciaga.jpg">
+            <img class="logo" id="ralph" src="Ralph-Lauren.jpg">
+        </div>
+
+    <div class="allCards">
+        <span class="card-body1">
+            <img class="card-pic" src="men-fashion-free-img-1.jpg"> 
+            <button class="card-btn" onclick="window.location.href='http://localhost:4040/men'">SHOP NOW</button>
+            <p class="card-text1">Latest Men's Collection</p>
+
+        </span>
+
+        <span class="card-body2">
+            <img class="card-pic" src="women.jpg"> 
+            <button class="card-btn" onclick="window.location.href='http://localhost:4040/women'">SHOP NOW</button>
+            <p class="card-text2">Latest Women's Collection</p>
+
+        </span>
+
+        <span class="card-body3">
+            <img class="card-pic" src="accessories.jpg"> 
+            <button class="card-btn" onclick="window.location.href='http://localhost:4040/accessories'">SHOP NOW</button>
+            <p class="card-text3">Latest Accessories</p>
+
+        </span>
+    </div>
+    </div>
+
+
+    <div class="allproducts">
+
+        <h2>Featured Products</h2>
+        <div id="line"></div>
+
+        <div id="products">
+
+            {{#each products as |p|}}
+
+            <div class="card" style="width: 18rem;">
+             <img onclick="window.location.href='http://localhost:4040/{{p.category}}/{{p.id}}'" src="products/blue-basic-jeans-1-free-img-300x300.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+            <p class="card-text">{{p.name}}<br>{{p.category}}<br>{{p.price}}</p>
+            {{!-- <button id="add-to-cart" onclick="window.location.href='./add-to-cart?id={{p._id}}'" >Add to Cart</button> --}}
+            </div>
+             </div>
+
+             {{/each}}
+            
+        </div>
+        
+    </div>
+    </div>
+
+<div class="services-row">
+    <div class="services">
+       <div class="benifits">
+           <h2>Benifits</h2>
+        <div id="line"></div>
+       </div> 
+    
+        <div class="feature">
+            <img src="globe-free-img.png">
+            <p>WORLDWIDE SHIPPING</p>
+        </div>
+
+        <div class="feature">
+            <img src="quality-free-img.png">
+            <p>BEST QUALITY </p>
+        </div>
+
+        <div class="feature">
+            <img src="tag-free-img.png">
+            <p>BEST OFFERS</p>
+        </div>
+
+        <div class="feature">
+            <img src="lock-free-img.png">
+            <p>SECURE PAYMENTS</p>
+        </div>
+    
+ </div>
+</div>
+
+
+
+        <div class="extras">
+
+            <div class="quick links">Quick Links
+
+                <div class="quick-items extras-items">Home</div>
+                <div class="quick-items extras-items">About</div>
+                <div class="quick-items extras-items">Cart</div>
+                <div class="quick-items extras-items">Contact Us</div>
+
+            </div>
+
+             <div class="forher links">For Her
+
+                <div class="forher-items extras-items">Home</div>
+                <div class="forher-items extras-items">About</div>
+                <div class="forher-items extras-items">Cart</div>
+                <div class="forher-items extras-items">Contact Us</div>
+
+            </div>
+
+             <div class="forhim links">For Him
+
+                <div class="forhim-items extras-items">Home</div>
+                <div class="forhim-items extras-items">About</div>
+                <div class="forhim-items extras-items">Cart</div>
+                <div class="forhim-items extras-items">Contact Us</div>
+
+            </div>
+
+        </div>
+
+</body>
+</html>

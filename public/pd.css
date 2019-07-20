@@ -1,0 +1,186 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+.navbar
+{
+    color: #333333;
+    display: flex;
+    padding-left:100px;
+    padding-top: 20px;
+    height: 55px;
+}
+.text-container
+{
+    padding-top: 7px;
+    display: flex;
+    font-size: 20px;
+    padding-left: 400px;
+}
+.nav-text
+{
+    padding-left: 35px;
+}
+#bag
+{
+    padding-top: 6.4px;
+    padding-left: 30px;
+    width: 40px;
+}
+#logo
+{
+    width: 130px;
+}
+.dynamic
+{
+    background-color: rgba(240, 248, 255, 0.521);
+
+}
+.content
+{
+    position: relative;
+    left:750px;
+    top:70px;
+    height: 800px;
+}
+#feed
+{
+    font-size: 14px;
+    color: dimgrey;
+}
+#pn
+{
+    position: relative;
+    font-size: 35px;
+    top:20px;
+}
+#pr
+{
+    position: relative;
+    top:40px;
+    font-size:25px;
+}
+#des
+{
+    position: relative;
+    top:60px;
+    width: 550px;
+    font-size: 17px;
+    
+}
+#quan
+{
+    position: relative;
+    top:100px;
+    width: 40px;
+    padding-left: 20px;
+    color: dimgrey;
+    font-size: 16px;
+    height: 33px;
+}
+#add-to-cart
+{
+    position: relative;
+    top:60px;
+    border: solid whitesmoke 3px;
+    width: 140px; 
+    height: 50px; 
+    background-color: rgb(103, 175, 238) ;
+    color: whitesmoke;
+    font-size: 20px;
+}
+#add-to-cart:hover
+{
+    border: solid black 3px;
+    color: black;
+    background-color:transparent;
+    transition: .3s;
+}
+#a
+{
+    color: rgba(0, 0, 0, 0.836);
+    font-size: 17px;
+}
+#cat
+{
+    position: relative;
+    top:230px;
+    color: dimgrey;
+    font-size: 17px;
+}
+.extras
+{
+    position: relative;
+    left:100px;
+    display: flex;
+    height: 150px;
+    font-size: 20px;
+}
+#quick
+{
+    top:15px;
+    position: relative;
+    left: 130px;
+    font-size: 25px;
+}
+.links
+{
+    position: relative;
+    top:65px;
+    left:10px;
+    font-size: 20px;
+}
+.links-content
+{
+    margin-top: 4px;
+
+}
+#forHer
+{
+    top:15px;
+    position: relative;
+    left: 350px;
+    font-size: 25px;
+
+}
+.her
+{
+    position: relative;
+    top:65px;
+    left:270px;
+    font-size: 20px;
+}
+.her-content
+{
+    margin-top: 4px;
+}
+#forHim
+{
+    top:15px;
+    position: relative;
+    left: 500px;
+    font-size: 25px;
+
+}
+.him
+{
+    position: relative;
+    top:65px;
+    left:415px;
+    font-size: 20px;
+}
+.him-content
+{
+    margin-top: 4px;
+}
+#main-pic
+{
+    position: absolute;
+    left:95px;
+    top:130px;
+    height: 530px;
+    width: 565px;
+}
